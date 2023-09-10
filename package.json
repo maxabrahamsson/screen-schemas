@@ -1,10 +1,10 @@
 {
   "name": "screen-schemas",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Generate screen descriptions from screen components directory for routes and navigation",
   "main": "dist/index.js",
   "bin": {
-    "screen-schemas": "./dist/cli.js"
+    "screen-schemas": "./tsc.js"
   },
   "scripts": {
     "build": "tsc",
