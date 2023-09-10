@@ -1,0 +1,27 @@
+{
+  "name": "screen-schemas",
+  "version": "1.0.1",
+  "description": "Generate screen descriptions from screen components directory for routes and navigation",
+  "main": "dist/index.js",
+  "bin": {
+    "screen-schemas": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-glob": "^3.3.1",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.4",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/yargs": "^17.0.24",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
