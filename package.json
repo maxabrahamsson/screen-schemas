@@ -1,6 +1,6 @@
 {
   "name": "screen-schemas",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Generate screen descriptions from screen components directory for routes and navigation",
   "main": "dist/index.js",
   "bin": {
@@ -8,6 +8,8 @@
   },
   "scripts": {
     "build": "tsc",
+    "build:publish:major": "npm run build && yarn publish --minor",
+    "build:publish:minor": "npm run build && yarn publish --minor",
     "test": "echo \"Error: no test specified\""
   },
   "author": "",
