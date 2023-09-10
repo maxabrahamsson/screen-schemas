@@ -1,6 +1,6 @@
 {
   "name": "screen-schemas",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Generate screen descriptions from screen components directory for routes and navigation",
   "main": "dist/index.js",
   "bin": {
