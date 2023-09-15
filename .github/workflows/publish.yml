@@ -6,7 +6,7 @@ on:
       - release
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
 
     steps:
@@ -37,15 +37,7 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-
-  publish:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Git checkout
-        uses: actions/checkout@v3
-
-      - name: Publish
+      - name: push to npmjs
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
@@ -53,7 +45,6 @@ jobs:
           access: public
 
   release:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
